@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit; /* унаследованный*/
+}
+header{
+  padding: 30px calc(50% - 600px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-family: Impact, fantasy;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+nav{
+  display: flex;
+  gap: 20px;
+}
+nav:last-child{
+  padding-right: 20px;
+}
+.banner{
+  background-image: url(/cat/img/bg.jpg);
+  color: aliceblue;
+  padding: 100px calc(50% - 600px);
+  background-position: bottom;
+  background-size: cover;
+  height:calc(100vh - 468px);
+}
+h1{
+  width: 500px;
+}
+.banner p{
+  width: 500px;
+}
+.info{
+  padding: 30px calc(50% - 600px);
+  display: flex;
+  gap: 30px;
+}
+img{
+  height: 30px;
+}
+
+.card{
+  display: flex;
+  width: 25%;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid ;
+  padding: 20px;
+  border-radius: 8px;
+}
+.card h4{
+  margin-bottom: 10px;
+}
