@@ -71,3 +71,44 @@ nav span{
 section div{
   padding: 10px;
 }
+.map{
+  height: 200px;
+  padding: 20px;
+  background-image: url(https://prog-center.pro/static/sber/task_8/map.jpeg);
+  background-position: bottom;
+  background-size: 20% 100%;
+  margin-bottom: 100px;
+  display: flex;
+}
+.map_1{
+  align-items: center;
+  justify-content: space-between;
+}
+.map_2{
+  justify-content: space-between;
+}
+.map_3{
+  flex-direction: column;
+  align-items: center;
+}
+.mario{
+  width: 50px;
+}
+.btn{
+  border: none;
+  color: white;
+  background-color: #2c3e50;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+.btn+.btn {
+  margin-left: 10px;
+}
+.btn:hover{
+  box-shadow: 5px 5px 5px black;
+}
+.pic{
+  background-color:tomato;
+  padding: 20px;
+}
