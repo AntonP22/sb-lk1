@@ -1,87 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="/">
-        <img
-          class="logo"
-          src="https://prog-center.pro/static/sber/task_6/logo.png"
-          alt=""
-        />
-      </a>
-      <nav>
-        <span>О Нас</span>
-        <span>Товары</span>
-        <span>Услуги</span>
-      </nav>
-      <div class="btns">
-        <button>Sign in</button>
-        <button>Log in</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <a href="/">
+      <img class="logo" src="https://prog-center.pro/static/sber/task_6/logo.png" alt="" />
+    </a>
+    <nav>
+      <span>О Нас</span>
+      <span>Товары</span>
+      <span>Услуги</span>
+    </nav>
+    <div class="btns">
+      <button>Sign in</button>
+      <button>Log in</button>
+    </div>
+  </header>
+  <div class="mycode">
+    <div class="card">
+      <select name="system" id="">
+        <option>Visa</option>
+        <option>Mastercard</option>
+        <option selected>Мир</option>
+      </select>
+      <input type="number" placeholder="0000" maxlength="4" name="num1">
+      <input type="number" placeholder="0000" maxlength="4" name="num2" >
+      <input type="number" placeholder="0000" maxlength="4" name="num3">
+      <input type="number" placeholder="0000" maxlength="4" name="num4">
+      <input type="text" placeholder="Ivanov Fedor" name="user">
+      <div class="card__date">
+        <input type="number" min="01" max="12" maxlength="2" value="07" >
+        /
+        <input type="number" min="01" max="99" maxlength="2" value="23" >
       </div>
-    </header>
-    <section>
-      <div class="squares">
-        <div class="sq_1">&#9587</div>
-        <div class="sq_2">&#9587</div>
-        <div class="sq_3">&#9587</div>
-        <div class="sq_4">&#9587</div>
+    </div>
+  </div>
+  <section>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <div class="facts">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus harum odit laboriosam iste beatae,
+        officia deserunt ratione, veniam modi nihil maiores enim ad expedita omnis? Consectetur ad inventore iusto sed?
       </div>
-    </section>
-    <section>
-      <div class="map map_1">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, reiciendis.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eos sapiente iste praesentium vero corrupti
+        nisi sed vel suscipit illum. </div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus earum autem sed laborum eligendi.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora, sed odit libero blanditiis
+        dolore! Aut fuga provident, consequatur inventore officiis maxime accusamus magni qui!</div>
+      <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat cupiditate quod ipsam quas eos totam vel
+        sequi eum nam veniam!</div>
+    </div>
+  </section>
+  <section>
+    <div class="squares">
+      <div class="sq_1">&#9587</div>
+      <div class="sq_2">&#9587</div>
+      <div class="sq_3">&#9587</div>
+      <div class="sq_4">&#9587</div>
+    </div>
+  </section>
+  <section>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <div class="facts2">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus harum odit laboriosam iste beatae,
+        officia deserunt ratione, veniam modi nihil maiores enim ad expedita omnis? Consectetur ad inventore iusto sed?
       </div>
-      <div class="map map_2">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-      </div>
-      <div class="map map_3">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-        <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
-      </div>
-    </section>
-    <section class="pic">
-      <button class="btn"><i class="fa-solid fa-arrow-up"></i></button>
-      <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
-      <button class="btn"><i class="fa-solid fa-arrow-down"></i></button>
-      <button class="btn"><i class="fa-solid fa-arrow-left"></i></button>
-    </section>
-    <footer>
-      <div class="links">
-        <a href="https://www.google.com" target="_blank" class="google"
-          ><i class="fa-brands fa-google fa-beat"></i
-        ></a>
-        <a href="https://www.yandex.ru" target="_blank" class="yandex"
-          ><img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yandex_Browser_logo.svg/2048px-Yandex_Browser_logo.svg.png"
-            alt="Yandex"
-        /></a>
-        <a href="https://www.mail.ru" target="_blank" class="mail"
-          ><img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Mailru.png"
-            alt="Mail"
-        /></a>
-      </div>
-    </footer>
-  </body>
+      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, reiciendis.</div>
+      <div class="f21">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod aut voluptate odit quaerat ad
+        facere consequuntur deserunt repudiandae optio, molestias, quia cumque reiciendis, vitae facilis maxime? Neque
+        consequatur ea voluptate sunt repudiandae molestiae! Expedita velit reprehenderit at ipsam officiis.. </div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus earum autem sed laborum eligendi.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempora, sed odit libero blanditiis
+        dolore! Aut fuga provident, consequatur inventore officiis maxime accusamus magni qui!</div>
+      <div class="f22">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat cupiditate quod ipsam quas eos
+        totam vel
+        sequi eum nam veniam!</div>
+    </div>
+  </section>
+  <section>
+    <div class="map map_1">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+    </div>
+    <div class="map map_2">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+    </div>
+    <div class="map map_3">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+      <img src="https://prog-center.pro/static/sber/task_8/mario.png" alt="" class="mario">
+    </div>
+  </section>
+  <section class="pic">
+    <button class="btn"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+    <button class="btn"><i class="fa-solid fa-arrow-down"></i></button>
+    <button class="btn"><i class="fa-solid fa-arrow-left"></i></button>
+  </section>
+  <footer>
+    <div class="links">
+      <a href="https://www.google.com" target="_blank" class="google"><i class="fa-brands fa-google fa-beat"></i></a>
+      <a href="https://www.yandex.ru" target="_blank" class="yandex"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yandex_Browser_logo.svg/2048px-Yandex_Browser_logo.svg.png"
+          alt="Yandex" /></a>
+      <a href="https://www.mail.ru" target="_blank" class="mail"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Mailru.png" alt="Mail" /></a>
+    </div>
+  </footer>
+</body>
+
 </html>
 
 <!--git config --global user.name Anton
