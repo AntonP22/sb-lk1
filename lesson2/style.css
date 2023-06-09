@@ -112,6 +112,9 @@ section div {
   background-color: tomato;
   padding: 20px;
 }
+h1{
+  padding:20px;
+}
 .facts div {
   padding: 10px;
   background-color: #34495e;
@@ -146,7 +149,7 @@ section div {
   grid-column: 2/ span 2;
 }
 .mycode{
-  height: 100vh;
+  height: 50vh;
   background-image:linear-gradient(to left bottom,rgba(255, 127, 80, 0.606),rgba(192, 192, 192, 0.605) 90%);
   display: flex;
   justify-content: center;
