@@ -6,22 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+
+    <script src="script.js">  </script>
+    <script>
+      function getRandom(max = 10, min = 0) {
+        return Math.floor(Math.random() * (max - min) + min);
+      }
+      
+
+      function getColor() {
+        let r = getRandom(256),
+            g = getRandom(256),
+            b = getRandom(256),
+            a = getRandom(101);
+        return `rgba(${r},${g},${b},${a / 100})`;
+      }
+      console.log(getColor());
+    </script>
+
 </head>
 <body>
   <h1>Hello JavaScript</h1>
-  <script src="script.js">  </script>
-  <script>
-    function getRandom(max = 10, min = 0) {
-      return Math.floor(Math.random()*(max-min) + min); 
-    }
-    console.log(getRandom(-10, 7));
-
-    function getColor(){
-      let r = getRandom(256),
-          g = getRandom(256),
-          b = getRandom(256);
-      return `rgb(${r},${g},${b})`;
-    }
-  </script>
+ <script>
+  document.body.style.background = getColor(getRandom());
+ </script>
 </body>
 </html>
