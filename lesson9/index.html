@@ -10,18 +10,5 @@
 <body>
   <h1>Hello JavaScript</h1>
   <script src="script.js">  </script>
-  <script>
-    function getRandom(max = 10, min = 0) {
-      return Math.floor(Math.random()*(max-min) + min); 
-    }
-    console.log(getRandom(-10, 7));
-
-    function getColor(){
-      let r = getRandom(256),
-          g = getRandom(256),
-          b = getRandom(256);
-      return `rgb(${r},${g},${b})`;
-    }
-  </script>
 </body>
 </html>
