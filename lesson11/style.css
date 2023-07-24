@@ -1,0 +1,17 @@
+body{
+background-color: #619e80;
+margin: 0;
+font-family: sans-serif;
+}
+.card{
+padding: 10 px;
+margin: 10 px;
+display: inline-block;
+background-color: #95a5a6;
+}
+.adds{
+color: #ffffff;
+background-color: #34495e;
+padding: 2px;
+margin: 2px;
+}

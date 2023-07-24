@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+.wrapper {
+max-width: 1200px;
+margin: auto;
+padding: 30px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;  
+}
+h2, p{
+  margin: 0;
+}
+.card {
+display: grid;
+gap: 10px;
+box-shadow: 0 0 5px #000;
+padding: 20px;
+border-radius: 8px; 
+text-align: center;
+grid-template-rows:  auto; 
+}
+.card i{
+font-size: 3rem;
+}
+.text{
+  font-size: .8em;
+  text-align: center;
+  align-self: start;
+}
