@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="function.js"></script>
+    </head>
+
+    <body>
+        <!-- nav. dashboard>. btn×5^main.
+container>.card×6 -->
+        <nav class="dashboard">
+            <div class="btn">+</div>
+            <div class="btn" onclick="localStorage.removeItem('cats')">X</div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </nav>
+        <main class="container">
+            <div class="card">
+                <img src="/lesson15,16/images/1.png" alt="" class="pic" />
+                <div class="age">10</div>
+                <div class="rate">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </div>
+                <div class="name">Vasya</div>
+            </div>
+            <div class="card">
+                <img src="/lesson15,16/images/2.png" alt="" class="pic" />
+                <div class="age">7</div>
+                <div class="rate">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </div>
+                <div class="name">Petya</div>
+            </div>
+            <div class="card">
+                <img src="/lesson15,16/images/3.png" alt="" class="pic" />
+                <div class="age">15</div>
+                <div class="rate">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </div>
+                <div class="name">Leva</div>
+            </div>
+            <div class="card">
+                <img src="/lesson15,16/images/4.png" alt="" class="pic" />
+                <div class="age">5</div>
+                <div class="rate">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </div>
+                <div class="name">Misha</div>
+            </div>
+            <div class="card">
+                <img src="/lesson15,16/images/3.png" alt="" class="pic" />
+                <div class="age">3</div>
+                <div class="rate">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </div>
+                <div class="name">Borya</div>
+            </div>
+            <div class="card">
+                <img src="/lesson15,16/images/6.png" alt="" class="pic" />
+                <div class="age">12</div>
+                <div class="rate">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </div>
+                <div class="name">Dima</div>
+            </div>
+        </main>
+        <div class="popup-wrapper">
+            <div class="popup" data-type="card">
+                <div class="close">+</div>
+                <div class="content">Cat info</div>
+            </div>
+            <div class="popup" data-type="add">
+                <div class="close">+</div>
+                <div class="content"><h2>Добавить кота</h2></div>
+                <!--id: 32,
+                    name: "Кот", 
+                    img_link: "https://mindset-potential.com/wp-content/
+                    uploads/2022/05/Opexels-photo-1870376.jpeg.jpg§quot;,
+                    age: 1,
+                    rate: 10,
+                    description: "Просто потому что =)",
+                    favourite: true -->
+                <form id="add">
+                    <div class="row">
+                        <label for="i1">Имя котика</label>
+                        <input type="text" id="i1" name="name" required>
+                    </div>
+                    <div class="row">
+                        <label for="i2">Порядковый номер</label>
+                        <input type="number" id="i2" name="id" required min="1">
+                    </div>
+                    <div class="row">
+                        <label for="i3">Изображение</label>
+                        <input type="text" id="i3" name="img_link">
+                    </div>
+                    <div class="row">
+                        <label for="i4">Возраст</label>
+                        <input type="number" id="i4" name="age" min="0" max="100">
+                    </div>
+                    <div class="row">
+                        <label for="i5">Рейтинг</label>
+                        <input type="range" id="i5" name="rate" min="0" max="10" value="5">
+                    </div>
+                    <div class="row">
+                        <label for="i6">
+                            <input type="checkbox" id="i6" name="favourite">Любимчик
+                        </label>
+                        
+                    </div>
+                    <div class="row">
+                        <label for="i7">Описание</label>
+                        <textarea  id="i7" name="description"></textarea>
+                    </div>
+                    <button type="submit">Добавить кота</button>
+                </form>
+            </div>
+            <div class="popup" data-type="info">
+                <div class="close">+</div>
+                <div class="content">
+                    <h2>Alert!</h2>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
